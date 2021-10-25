@@ -1,0 +1,44 @@
+{
+  "name": "git-architecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "rules": {
+      "references-empty": [
+        2,
+        "never"
+      ]
+    },
+    "parserPreset": {
+      "parserOpts": {
+        "issuePrefixes": [
+          "ISSUE-"
+        ]
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themrzlyv/git-architecture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themrzlyv/git-architecture/issues"
+  },
+  "homepage": "https://github.com/themrzlyv/git-architecture#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "husky": "^4.2.5"
+  }
+}
